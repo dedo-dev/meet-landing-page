@@ -111,6 +111,37 @@ textarea:not([rows]) {
     --space-112: 7rem;
 }
 
+
+/* ------ COMPONENT ------ */
+.button {
+    --_bg: var(--bg, var(--clr-primary-600));
+    --_clr: var(--clr, var(--clr-white));
+    background: var(--_bg);
+    color: var(--_clr);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: var(--fw-900);
+    padding: var(--space-16) var(--space-40);
+    border-radius: var(--space-32);
+
+    &:hover {
+        --bg: var(--clr-primary-500);
+    }
+
+    & span {
+        color: var(--clr-primary-300);
+    }
+
+}
+
+.button--secondary {
+    --bg: var(--clr-secondary-600);
+
+    &:hover {
+        --bg: var(--clr-secondary-500);
+    }
+}
+
 body {
     background: var(--clr-white);
     color: var(--clr-neutral-600);
@@ -122,3 +153,4 @@ body {
     justify-content: center;
     padding-block-start: var(--space-48);
 }
+
