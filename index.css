@@ -83,7 +83,36 @@ textarea:not([rows]) {
     --clr-secondary-300: hsl(268, 100%, 86%);
     --clr-secondary-500: hsl(268, 55%, 71%);
     --clr-secondary-600: hsl(268, 34%, 53%);
-    --clr-neutral-300: hsl(240, 18%, 85%) ;
-    --clr-neutral-600: hsl(240, 10%, 57%) ;
-    --clr-neutral-900: hsl(240, 21%, 20%) ;
+    --clr-neutral-300: hsl(240, 18%, 85%);
+    --clr-neutral-600: hsl(240, 10%, 57%);
+    --clr-neutral-900: hsl(240, 21%, 20%);
+    --clr-white: hsl(0, 0%, 98%);
+    /* Typography */
+    --ff-primary: "Red Hat Display", sans-serif;
+    --fs-base: 1rem;
+    --fs-medium: 1.125rem;
+    --fs-xl: 2.5rem;
+    --fs-xxl: 4rem;
+    --fw-500: 500;
+    --fw-900: 900;
+    --ls-900: .25rem;
+    /* Spacing */
+    --space-4: .25rem;
+    --space-8: .5rem;
+    --space-16: 1rem;
+    --space-24: 1.5rem;
+    --space-32: 2rem;
+    --space-40: 2.5rem;
+    --space-48: 3rem;
+    --space-56: 3.5rem;
+    --space-64: 4rem;
+    --space-72: 4.5rem;
+    --space-80: 5rem;
+    --space-112: 7rem;
+}
+
+body {
+    background: var(--clr-white);
+    color: var(--clr-neutral-600);
+    font-family: var(--ff-primary);
 }
