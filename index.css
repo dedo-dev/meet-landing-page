@@ -17,7 +17,7 @@ html {
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, h3, h4, p,
 figure, blockquote, dl, dd {
-  margin-block-end: 0;
+  margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -89,10 +89,12 @@ textarea:not([rows]) {
     --clr-white: hsl(0, 0%, 98%);
     /* Typography */
     --ff-primary: "Red Hat Display", sans-serif;
-    --fs-base: 1rem;
-    --fs-medium: 1.125rem;
-    --fs-xl: 2.5rem;
-    --fs-xxl: 4rem;
+    --fs-400: .75rem;
+    --fs-500: 1rem;
+    --fs-600: 1.125rem;
+    --fs-700: 2rem;
+    --fs-800: 2.5rem;
+    --fs-900: 4rem;
     --fw-500: 500;
     --fw-900: 900;
     --ls-900: .25rem;
@@ -156,17 +158,19 @@ body {
     background: var(--clr-white);
     color: var(--clr-neutral-600);
     font-family: var(--ff-primary);
+    text-align: center;
     margin: 0;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
     padding-block-start: var(--space-48);
+
+    & img {
+        margin-inline: auto;
+    }
 }
 
 .hero {
-    text-align: center;
     padding-block-start: var(--space-64);
     padding-inline: var(--space-32);
 }
@@ -184,7 +188,7 @@ body {
 }
 
 .hero__title {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-800);
     font-weight: var(--fw-900);
     color: var(--clr-neutral-900);
     margin: 0;
@@ -194,3 +198,59 @@ body {
     margin: 0;
 }
 
+.features {
+    padding-block: var(--space-64);
+    padding-inline: var(--space-32);
+}
+
+.features__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-64);
+}
+
+.divider {
+    font-weight: var(--fw-900);
+    height: var(--space-56);
+    width: var(--space-56);
+    padding: var(--space-16);
+    border: 1px solid var(--clr-neutral-300);
+    border-radius: var(--space-112);
+}
+
+.features__img-wrapper {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: var(--space-16);
+
+    & > img {
+        border-radius: var(--space-16);
+    }
+}
+
+.features__copy-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-32);
+}
+
+.features__headings {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+}
+
+.features__pre-title {
+    color: var(--clr-primary-600);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-900);
+    text-transform: uppercase;
+    letter-spacing: var(--ls-900);
+}
+
+.features__title {
+    color: var(--clr-neutral-900);
+    font-size: var(--fs-700);
+    font-weight: var(--fw-900);
+}
