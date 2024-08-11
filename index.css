@@ -73,3 +73,17 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+/* ------ CSS VARIABLES ------ */
+:root {
+    /* Colors */
+    --clr-primary-300: hsl(192, 90%, 77%);
+    --clr-primary-500: hsl(192, 54%, 64%);
+    --clr-primary-600: hsl(192, 37%, 48%);
+    --clr-secondary-300: hsl(268, 100%, 86%);
+    --clr-secondary-500: hsl(268, 55%, 71%);
+    --clr-secondary-600: hsl(268, 34%, 53%);
+    --clr-neutral-300: hsl(240, 18%, 85%) ;
+    --clr-neutral-600: hsl(240, 10%, 57%) ;
+    --clr-neutral-900: hsl(240, 21%, 20%) ;
+}
