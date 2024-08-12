@@ -254,3 +254,30 @@ body {
     font-size: var(--fs-700);
     font-weight: var(--fw-900);
 }
+
+.cta {
+    padding-block: var(--space-64);
+    padding-inline: var(--space-32);
+    background-image: url(assets/mobile/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-image: fill 1 linear-gradient(hsla(192, 37%, 48%, 85%), hsla(192, 37%, 48%, 85%));
+}
+
+.cta__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-24);
+}
+
+.cta__title {
+    color: var(--clr-white);
+    font-size: var(--fs-700);
+    font-weight: var(--fw-900);
+}
+
+.cta__copy {
+    color: var(--clr-white);
+}
+
