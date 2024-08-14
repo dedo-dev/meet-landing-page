@@ -207,11 +207,11 @@ body {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     gap: var(--space-16);
 
-    & > img {
-        border-radius: var(--space-16);
-    }
 }
 
+.features__img {
+    border-radius: var(--space-8);
+}
 .features__copy-wrapper {
     gap: var(--space-32);
 }
