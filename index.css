@@ -182,8 +182,6 @@ body {
     }
 }
 
-/* 👇 REFACTORING FROM HERE 👇 */
-
 .wrapper:has(.hero, .features) {
     padding-block-start: var(--space-64);
     padding-inline: var(--space-32);
@@ -245,6 +243,7 @@ footer:is(.wrapper) {
     gap: var(--space-24);
 }
 
+/* ⚠️⚠️⚠️CHANGE MEDIA UNITS⚠️⚠️⚠️ */
 @media(width > 600px) {
     .button-wrapper {
         flex-direction: row;
@@ -253,6 +252,7 @@ footer:is(.wrapper) {
 
     /* TYPOGRAPHY */
     .hero__title {
+        /* ⚠️⚠️⚠️ADD VARIABLE⚠️⚠️⚠️ */
         font-size: 3rem;
     }
     .features__pre-title {
@@ -297,6 +297,7 @@ footer:is(.wrapper) {
     }
 }
 
+/* ⚠️⚠️⚠️CHANGE MEDIA UNITS⚠️⚠️⚠️ */
 @media(width > 900px) {
     /* TYPOGRAPHY */
     .hero__copy,
@@ -346,17 +347,18 @@ footer:is(.wrapper) {
     }
 
     .cta {
+        /* ⚠️⚠️⚠️SET DIRECTION COL TO CTA INSTEAD OF HTML⚠️⚠️⚠️ */
         flex-direction: row !important;
         align-items: start;
         justify-content: space-between;
         text-align: left;
     }
 
-    .cta__title {border: 1px solid red;
+    .cta__title {
         max-width: 18ch;
     }
 
-    .cta__copy {border: 1px solid red;
+    .cta__copy {
         max-width: 30ch;
     }
 
