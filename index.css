@@ -269,6 +269,11 @@ footer:is(.wrapper) {
     .features__copy-wrapper {
         max-width: 47ch;
     }
+
+    .cta {
+        max-width: 47ch;
+        margin-inline: auto;
+    }
 }
 
 /* ------ UTILITY ------ */
