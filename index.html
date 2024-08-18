@@ -20,10 +20,19 @@
     <section class="wrapper">
       <div class="hero | d-flex fd-col">
         <!-- ⚠️⚠️⚠️FIX THE IMGS FOR ALL DEVICE⚠️⚠️⚠️ -->
+
+        <div class="hero__img-left-desk">
+          <picture>
+            <source media="(min-width: 900px)" srcset="assets/desktop/image-hero-left.png">
+            <!-- <img src="assets/desktop/image-hero-left.png" alt=""> -->
+            <img src="assets/tablet/image-hero.png" alt="">
+          </picture>
+        </div>
+
         <picture class="hero__img">
-          <source media="(min-width: 900px)" srcset="assets/desktop/image-hero-right.png">
           <img src="assets/tablet/image-hero.png" alt="">
         </picture>
+
         <div class="hero__copy-wrapper | d-flex fd-col">
           <h1 class="hero__title | fw-900 | clr-n-900">Group chat for everyone</h1>
           <p class="hero__copy">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
@@ -32,6 +41,15 @@
             <a href="#" class="button button--secondary">What is it?</a>
           </div>
         </div>
+
+        <div class="hero__img-right-desk">
+          <picture>
+            <source media="(min-width: 900px)" srcset="assets/desktop/image-hero-right.png">
+            <!-- <img src="assets/desktop/image-hero-right.png" alt=""> -->
+            <img src="assets/tablet/image-hero.png" alt="">
+          </picture>
+        </div>
+
       </div>
     </section>
 
