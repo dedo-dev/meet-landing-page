@@ -394,8 +394,6 @@ footer:is(.wrapper) {
     flex-direction: column;
 }
 
-
-
 /* Typography */
 .fw-900 {
     font-weight: var(--fw-900);
@@ -414,8 +412,3 @@ footer:is(.wrapper) {
 .number {
     margin-block-start: var(--space-64);
 }
-
-/*
-.hero {
-    flex-direction: row;
-} */
