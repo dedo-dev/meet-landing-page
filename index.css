@@ -95,7 +95,6 @@ picture {
     text-decoration: none;
     font-weight: var(--fw-900);
     max-width: fit-content;
-    /* padding: var(--space-16) var(--space-40); */
     padding: 1em 2.5em;
     border-radius: var(--space-32);
 
@@ -231,7 +230,6 @@ footer:is(.wrapper) {
     gap: var(--space-24);
 }
 
-/* ⚠️⚠️⚠️CHANGE MEDIA UNITS⚠️⚠️⚠️ */
 @media(width > 37.5em) {
     .button-wrapper {
         flex-direction: row;
@@ -285,8 +283,7 @@ footer:is(.wrapper) {
     }
 }
 
-/* ⚠️⚠️⚠️CHANGE MEDIA UNITS⚠️⚠️⚠️ */
-@media(width > 1100px) {
+@media(width > 68.75em) {
     /* TYPOGRAPHY */
     .hero__copy,
     .features__copy,
