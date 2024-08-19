@@ -156,14 +156,29 @@ textarea:not([rows]) {
     }
 }
 
+.number {
+    margin-block-start: var(--space-64);
+}
+
 /* ------ TYPOGRAPHY ------ */
 .hero__title {
     font-size: var(--fs-800);
+    font-weight: var(--fw-900);
 }
 
-.features__title,
+.features__pre-title, .features__title,
 .cta__title {
     font-size: var(--fs-700);
+    font-weight: var(--fw-900);
+}
+
+.hero__title,
+.features__title {
+    color: var(--clr-neutral-900);
+}
+
+.cta__title, .cta__copy {
+    color: var(--clr-white);
 }
 
 /* ------ LAYOUT ------ */
@@ -185,6 +200,13 @@ body {
 .wrapper:has(.hero, .features) {
     padding-block-start: var(--space-64);
     padding-inline: var(--space-32);
+}
+
+.hero, .hero__copy-wrapper,
+.features, .features__copy-wrapper, .features__headings,
+.cta {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
@@ -352,7 +374,7 @@ footer:is(.wrapper) {
     }
 
     .hero {
-        flex-direction: row !important;
+        flex-direction: row;
     }
 
     .hero__img {
@@ -366,7 +388,7 @@ footer:is(.wrapper) {
 
     .cta {
         /* ⚠️⚠️⚠️SET DIRECTION COL TO CTA INSTEAD OF HTML⚠️⚠️⚠️ */
-        flex-direction: row !important;
+        flex-direction: row;
         align-items: start;
         justify-content: space-between;
         text-align: left;
@@ -383,32 +405,4 @@ footer:is(.wrapper) {
     .number {
         margin-block-start: var(--space-72);
     }
-}
-/* ------ UTILITY ------ */
-/* Display */
-.d-flex {
-    display: flex;
-}
-
-.fd-col {
-    flex-direction: column;
-}
-
-/* Typography */
-.fw-900 {
-    font-weight: var(--fw-900);
-}
-
-/* Colors */
-.clr-n-900 {
-    color: var(--clr-neutral-900);
-}
-
-.clr-white {
-    color: var(--clr-white);
-}
-
-/* Elements */
-.number {
-    margin-block-start: var(--space-64);
 }
