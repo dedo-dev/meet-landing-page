@@ -232,7 +232,7 @@ footer:is(.wrapper) {
 }
 
 /* ⚠️⚠️⚠️CHANGE MEDIA UNITS⚠️⚠️⚠️ */
-@media(width > 600px) {
+@media(width > 37.5em) {
     .button-wrapper {
         flex-direction: row;
         justify-content: center;
