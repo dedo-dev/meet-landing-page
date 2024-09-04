@@ -222,6 +222,7 @@ footer:is(.wrapper) {
     margin-block-start: -2.3rem;
 }
 
+/* ⚠️⚠️⚠️ FIX PROBLEM WITH EMPTY SPACE UNDER THE FOOTER DUE NEGATIVE MARGIN 🥴 ⚠️⚠️⚠️ */
 .wrapper:has(.cta) {
     padding-block: var(--space-64);
     padding-inline: var(--space-32);
