@@ -220,6 +220,7 @@ body {
 
 .wrapper:has(.cta) {
     margin-block-start: -2.3rem;
+    min-height: 100%;
 }
 
 /* ⚠️⚠️⚠️ FIX PROBLEM WITH EMPTY SPACE UNDER THE FOOTER DUE NEGATIVE MARGIN 🥴 ⚠️⚠️⚠️ */
