@@ -218,10 +218,6 @@ body {
     letter-spacing: var(--ls-900);
 }
 
-footer {
-    min-height: 100vh;
-}
-
 footer .wrapper {
     margin-block-start: -2.3rem;
 }
