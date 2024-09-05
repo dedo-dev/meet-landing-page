@@ -218,7 +218,7 @@ body {
     letter-spacing: var(--ls-900);
 }
 
-footer .wrapper {
+footer  {
     margin-block-start: -2.3rem;
 }
 
