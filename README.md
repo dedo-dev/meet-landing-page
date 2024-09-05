@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Challenge Solution](https://your-solution-url.com)
+- Solution URL: [Challenge Solution](https://www.frontendmentor.io/solutions/meet-landing-page-using-flexbox-and-grid-u07yWLY8II)
 - Live Site URL: [Live Demo](https://dz-meet-landing-page.vercel.app/)
 
 ## My process
