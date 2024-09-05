@@ -218,7 +218,7 @@ body {
     letter-spacing: var(--ls-900);
 }
 
-footer:is(.wrapper) {
+footer:has(.wrapper) {
     margin-block-start: -2.3rem;
 }
 
@@ -317,6 +317,15 @@ footer:is(.wrapper) {
         padding-block-start: var(--space-80);
     }
 
+    .wrapper:has(.features, .cta) {
+        padding-inline: var(--space-80);
+    }
+
+    .wrapper:has(.cta) {
+        padding-block: var(--space-112);
+        background-image: url(assets/desktop/image-footer.jpg);
+    }
+
     .hero {
         flex-direction: row;
         justify-content: space-between;
@@ -328,15 +337,6 @@ footer:is(.wrapper) {
     .cta {
         margin-inline: auto;
         max-width: 70rem;
-    }
-
-    .wrapper:has(.features, .cta) {
-        padding-inline: var(--space-80);
-    }
-
-    .wrapper:has(.cta) {
-        padding-block: var(--space-112);
-        background-image: url(assets/desktop/image-footer.jpg);
     }
 
     .hero,
@@ -356,6 +356,7 @@ footer:is(.wrapper) {
 
     .hero__copy-wrapper {
         padding: 0;
+        max-width: 50ch;
     }
 
     .cta {
@@ -370,7 +371,7 @@ footer:is(.wrapper) {
     }
 
     .cta__copy {
-        max-width: 30ch;
+        max-width: 28ch;
     }
 
     .number {
