@@ -218,9 +218,12 @@ body {
     letter-spacing: var(--ls-900);
 }
 
-.wrapper:has(.cta) {
+footer {
+    min-height: 100vh;
+}
+
+footer .wrapper {
     margin-block-start: -2.3rem;
-    min-height: 100%;
 }
 
 /* ⚠️⚠️⚠️ FIX PROBLEM WITH EMPTY SPACE UNDER THE FOOTER DUE NEGATIVE MARGIN 🥴 ⚠️⚠️⚠️ */
