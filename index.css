@@ -222,7 +222,6 @@ footer  {
     margin-block-start: -2.3rem;
 }
 
-/* ⚠️⚠️⚠️ FIX PROBLEM WITH EMPTY SPACE UNDER THE FOOTER DUE NEGATIVE MARGIN 🥴 ⚠️⚠️⚠️ */
 .wrapper:has(.cta) {
     padding-block: var(--space-64);
     padding-inline: var(--space-32);
@@ -283,9 +282,9 @@ footer {
         background-image: url(assets/tablet/image-footer.jpg);
         } */
 
-        footer {
+    footer {
 
-            background-image: url(assets/tablet/image-footer.jpg);
+        background-image: url(assets/tablet/image-footer.jpg);
     }
 
     .cta {
@@ -325,6 +324,10 @@ footer {
         padding-block-start: var(--space-80);
     }
 
+    .wrapper:has(.hero) {
+        padding-block-start: var(--space-80);
+    }
+
     .wrapper:has(.features, .cta) {
         padding-inline: var(--space-80);
     }
@@ -336,7 +339,6 @@ footer {
 
     footer {
         background-image: url(assets/desktop/image-footer.jpg);
-
     }
 
     .hero {
