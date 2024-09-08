@@ -325,7 +325,7 @@ footer {
     }
 
     .wrapper:has(.hero) {
-        padding-block-start: var(--space-80);
+        padding-block-start: var(--space-112);
     }
 
     .wrapper:has(.features, .cta) {
